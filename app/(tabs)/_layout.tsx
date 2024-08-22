@@ -32,6 +32,33 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: 'Profile',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'man' : 'man-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="map"
+        options={{
+          title: 'map',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'map' : 'map-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="campaign"
+        options={{
+          title: 'Campaigns',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'notifications' : 'notifications-outline'} color={color} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
