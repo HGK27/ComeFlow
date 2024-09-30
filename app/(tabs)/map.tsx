@@ -4,7 +4,6 @@ import MapView, { Marker, Callout } from 'react-native-maps';
 import * as Location from 'expo-location';
 import Icon from '@expo/vector-icons/MaterialIcons';
 
-
 const MapComponent: React.FC = () => {
     const [locatiolAt, setLocatiolAt] = useState<number | null>(null);
     const [locatioLong, setLocatioLong] = useState<number | null>(null);
